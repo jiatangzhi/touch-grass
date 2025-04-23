@@ -5,23 +5,23 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-green-100 to-white px-4">
+    <main className="min-h-screen flex flex-col items-center justify-center bg-green-500 px-4 py-8 sm:py-12">
       <motion.h1
-        className="text-5xl font-bold text-green-700 mb-6 text-center"
+        className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 text-center"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        🌿 Ready to touch grass? 🌿
+        Time to get leafy
       </motion.h1>
 
       <motion.p
-        className="text-lg text-gray-700 text-center mb-8 max-w-md"
+        className="text-base sm:text-lg text-white text-center mb-6 sm:mb-8 max-w-sm sm:max-w-md"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.6 }}
       >
-        Have you touched grass today?
+
       </motion.p>
 
       <motion.div
@@ -30,10 +30,9 @@ export default function Home() {
         transition={{ delay: 0.6, duration: 0.6 }}
         className="text-center"
       >
-        <h1 className="text-3xl font-bold mb-6">Touching Grass Detector 🌿</h1>
         <Link to="/grass-scanner">
-          <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded shadow">
-            Launch Scanner 🚀
+          <button className="rounded-3xl bg-white hover:bg-gray-100 text-green-500 font-semibold py-3 px-7 sm:px-8 text-sm sm:text-base shadow-md transition duration-200">
+            TOUCH GRASS
           </button>
         </Link>
       </motion.div>

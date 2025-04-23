@@ -10,11 +10,9 @@ export default function GrassSecure() {
         className="text-center p-8 bg-white rounded-xl shadow-lg"
       >
         <h1 className="text-4xl font-bold text-green-600 mb-4">
-          🌿 You're Touching Grass!
+          Grass secured! 🔒
         </h1>
-        <p className="text-lg text-gray-700">
-          Grass secured! 😁
-        </p>
+        <p className="text-lg text-gray-700">Time to go back inside</p>
       </motion.div>
     </div>
   );
