@@ -1,42 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+.center-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #f0fdf4;
+}
+
+.scanner-wrapper {
+  max-width: 400px;
+  width: 100%;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #15803d; /* Tailwind green-700 */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button:hover {
+  opacity: 0.9;
 }
 
-.card {
-  padding: 2em;
+button.train-grass {
+  background-color: #22c55e; /* Tailwind green-500 */
+  color: white;
 }
 
-.read-the-docs {
-  color: #888;
+button.train-not-grass {
+  background-color: #facc15; /* Tailwind yellow-400 */
+  color: black;
+}
+
+button.start-detection {
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  color: white;
 }
